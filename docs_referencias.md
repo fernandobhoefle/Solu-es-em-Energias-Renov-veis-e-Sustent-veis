@@ -17,12 +17,3 @@
 7. Greener. Estudo Estratégico (4 kWp = R$ 12.680 em jan/2024; alta de ~7% no 1º semestre de 2026).
    https://www.pv-magazine.com/2026/09/26/pv-system-costs-increase-7-percent-brazil-h1/
    https://canalsolar.com.br/valor-da-energia-solar/
-
-## A consultar pelo grupo (não verificadas por este projeto)
-- CRESESB/SunData: irradiação (HSP) da cidade do comércio: https://cresesb.cepel.br
-- INPE: Atlas Brasileiro de Energia Solar
-- Procel/Inmetro (PBE): potência e consumo dos equipamentos reais
-- Sebrae: materiais de eficiência energética para pequenos negócios
-
-> Valores ainda ESTIMADOS em `data/premissas.json`: potências e fatores de uso dos equipamentos, HSP, desempenho do
-> sistema, custo de manutenção e de troca do inversor, preços de LED e manutenção. Registre a data de acesso de cada fonte.
