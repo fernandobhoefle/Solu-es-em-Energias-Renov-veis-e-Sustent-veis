@@ -1,0 +1,82 @@
+{
+  "_aviso": "Valores marcados como ESTIMADO são premissas justificadas e DEVEM ser verificados (ver docs/referencias.md). O dono do negócio pode trocar pelos dados da própria conta de luz.",
+  "perfil": "Mercearia de bairro (exemplo)",
+  "equipamentos": [
+    {
+      "nome": "Refrigerador expositor de bebidas",
+      "tipo": "refrigeracao",
+      "qtd": 1,
+      "potencia_w": 400,
+      "horas_dia": 24,
+      "fator_uso": 0.5,
+      "dias_mes": 30
+    },
+    {
+      "nome": "Freezer horizontal",
+      "tipo": "refrigeracao",
+      "qtd": 1,
+      "potencia_w": 300,
+      "horas_dia": 24,
+      "fator_uso": 0.5,
+      "dias_mes": 30
+    },
+    {
+      "nome": "Lâmpadas fluorescentes 40 W",
+      "tipo": "iluminacao",
+      "qtd": 10,
+      "potencia_w": 40,
+      "horas_dia": 10,
+      "fator_uso": 1.0,
+      "dias_mes": 26
+    },
+    {
+      "nome": "Ventiladores",
+      "tipo": "outros",
+      "qtd": 2,
+      "potencia_w": 80,
+      "horas_dia": 10,
+      "fator_uso": 1.0,
+      "dias_mes": 26
+    },
+    {
+      "nome": "Computador, balança e maquininha",
+      "tipo": "outros",
+      "qtd": 1,
+      "potencia_w": 150,
+      "horas_dia": 10,
+      "fator_uso": 1.0,
+      "dias_mes": 26
+    }
+  ],
+  "consumo_conta_kwh": null,
+  "tarifa_rs_kwh": 1.1,
+  "fator_emissao_kgco2_kwh": 0.0385,
+  "custo_disponibilidade_kwh": 50,
+  "eficiencia": {
+    "led_w": 18,
+    "custo_led_un_rs": 25,
+    "reducao_refrigeracao": 0.1,
+    "custo_manutencao_refrigeracao_rs": 100
+  },
+  "solar": {
+    "hsp": 4.5,
+    "desempenho": 0.8,
+    "custo_rs_kwp": 3000,
+    "perda_compensacao": 0.12,
+    "manutencao_anual_rs": 150,
+    "vida_util_anos": 25,
+    "troca_inversor_rs": 2500,
+    "ano_troca_inversor": 12
+  },
+  "origem": {
+    "equipamentos": "ESTIMADO - potências típicas de etiqueta/catálogo (Procel/Inmetro); fator_uso = fração do tempo com compressor ligado (ESTIMADO). Substituir pelos equipamentos reais do comércio.",
+    "tarifa_rs_kwh": "ESTIMADO, ancorado em contas B3 comerciais de 2026 (RJ, ~R$ 1,16 a 1,22/kWh com tributos) e no reajuste de 10,18% da Enel SP (ANEEL, jul/2026). Substituir pela tarifa da sua conta.",
+    "fator_emissao_kgco2_kwh": "MCTI: média anual do SIN em 2023 = 0,0385 tCO2/MWh (a de 2023 foi a menor em 12 anos). Valores mensais de 2025 foram ainda menores (~0,022 a 0,029); mantemos 0,0385 por ser o anual oficial.",
+    "custo_disponibilidade_kwh": "ANEEL REN 1.000/2021: mínimo faturável de 30 kWh (monofásico), 50 (bifásico) e 100 kWh (trifásico). Contas B3 trifásicas de 2026 mostram 100 kWh de custo de disponibilidade. Usamos bifásico (50).",
+    "hsp": "ESTIMADO: ~4,5 kWh/m2/dia para São Paulo; CONFERIR no SunData/CRESESB (cresesb.cepel.br) com o CEP do comércio.",
+    "desempenho": "ESTIMADO - taxa de desempenho típica de 0,75 a 0,85.",
+    "custo_rs_kwp": "Greener/Solfácil: média nacional ~R$ 2,45 a 2,49/Wp (2025-26) e R$ 12.680 para 4 kWp (jan/2024, ~R$ 3,17/Wp); Greener indica alta de 7% no 1º semestre de 2026. Usamos R$ 3,00/Wp (R$ 3.000/kWp) para sistema pequeno instalado.",
+    "perda_compensacao": "Lei 14.300/2022 art. 27: Fio B não compensado = 60% (2026), 75% (2027), 90% (2028). Fio B de ~R$ 0,2065/kWh (60% = R$ 0,1239, Canal Solar); perda ≈ 0,60 x 0,2065 / 1,10 ≈ 0,12, supondo que toda a energia passa pela rede (conservador). A partir de 2029 a regra será definida pela ANEEL.",
+    "eficiencia": "ESTIMADO - LED tubular 18 W; limpeza de condensador e troca de borrachas reduz ~10% (valor conservador a verificar)."
+  }
+}
